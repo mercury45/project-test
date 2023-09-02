@@ -10,14 +10,22 @@ public class Calculator {
 		char operation = in.next().charAt(0);
 		System.out.print("Input your second number: ");
 		long num2 = in.nextLong();
-		if (operation == '+') {
-			System.out.printf("Your result: %d\n",num1+num2);
-		} else if (operation == '-') {
-			System.out.printf("Your result: %d\n",num1-num2);
-		} else if (operation == '*') {
-			System.out.printf("Your result: %d\n",num1*num2);
-		}else if (operation == '/') {
-			System.out.printf("Your result is about: %d\n",num1/num2);
+		switch (operation) {
+			case '+':
+				System.out.printf("Your result: %d\n",num1+num2);
+				break;
+			case '-':
+				System.out.printf("Your result: %d\n",num1-num2);
+				break;
+			case '*':
+				System.out.printf("Your result: %d\n",num1*num2);
+				break;
+			case '/':
+				System.out.printf("Your result is about: %d\n",num1/num2);
+				break;
+			default:
+				System.out.print("Wrong operation!");
+				break;
 		}
 	}
 }
