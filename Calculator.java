@@ -12,6 +12,12 @@ public class Calculator {
 		short num2 = in.nextShort();
 		if (operation == '+') {
 			System.out.printf("Your result: %d\n",num1+num2);
-		} 
+		} else if (operation == '-') {
+			System.out.printf("Your result: %d\n",num1-num2);
+		} else if (operation == '*') {
+			System.out.printf("Your result: %d\n",num1*num2);
+		}else if (operation == '/') {
+			System.out.printf("Your result is about: %d\n",num1/num2);
+		}
 	}
 }
